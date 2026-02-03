@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+.page-wrapper {
+    width: 100%;
+    height: 120vh;
+}
+
+/* Navbar section start */
+
+.navbar {
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 13%;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+nav a:hover {
+    padding: 5px;
+    color: blue;
+    border: 2px solid crimson;
+    border-radius: 20px;
+    background: rgb(175, 174, 174);
+}
+
+nav img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 200px;
+}
+
+/* Navbar section end */
+
+/* Header section start */
+
+.header-container {
+    background-image: url(https://mi-home.pl/cdn/shop/articles/po-co-robimy-tysiace-zdjec-1_2c3defc5-deb2-4dd7-90d7-b2b5f68df24a.jpg?v=1761289905&width=1100);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15vh;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.header-container {
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    ;
+
+    p {
+        text-align: center;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+/* Header section end */
+
+/* Search section start */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    padding: 15px;
+
+    input {
+        width: 50%;
+        height: 3rem;
+        border: 5px solid rgb(65, 131, 230);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+.btn-search {
+    height: 3rem;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn-search:hover {
+    background: rgb(204, 203, 203);
+}
+
+/* Search section end */
+
+/* Contact section start */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+}
+
+.form {
+
+    input,
+    textarea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 50rem;
+        height: 100%;
+    }
+}
+
+.btn-send {
+    width: 10%;
+    height: 3rem;
+    border: 5px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Contact section end */
+
+/* Footer section start */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+
+    p {
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.img-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+    width: 1200px;
+    padding: 10px;
+}
+
+/* Footer section end */
+
+/* Javascript elements */
+ .photoEl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+ }

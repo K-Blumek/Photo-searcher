@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Page Container -->
+    <section class="page-wrapper">
+
+        <!-- Navbar section start -->
+        <section class="navbar">
+            <nav>
+                <img src="https://www.jumbo-shop.pl/blog/wp-content/uploads/2019/07/galeria-na-scianie.jpeg"
+                    alt="Logo galerii zdjęć">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#header-container">About Us</a></li>
+                        <li><a href="#search-container">Search Img</a></li>
+                        <li><a href="#contact-container">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <!-- Navbar section end -->
+
+        <!-- Header section start -->
+        <header>
+            <div class="header-container">
+                <h1>Tysiące zdjęć na wyciągnięcie ręki</h1>
+                <p>Wykorzystaj naszą wyszukiwarkę i znajdź dowolne zdjęcie jakie tylko ci się podoba!</p>
+            </div>
+        </header>
+        <!-- Header section end -->
+
+        <!-- Search section start -->
+        <section class="search-container">
+            <input type="text" class="photo" placeholder="Search image...">
+            <button type="submit" class="btn-search">Search</button>
+        </section>
+        <div class="img-container"></div>
+        <!-- Search section end -->
+
+        <!-- Contact section start -->
+        <section class="contact-container">
+            <div class="form">
+                <form action="">
+                    <input type="text" class="title" placeholder="Write your title of message" required>
+                    <input type="email" class="email" placeholder="Put your email" required>
+                    <textarea name="message" class="message" placeholder="Message..." rows="5" required></textarea>
+                </form>
+            </div>
+            <button type="submit" class="btn-send" disabled>Send</button>
+        </section>
+        <!-- Contact section end -->
+
+        <!-- Footer section start -->
+        <footer>
+            <p>2025 Wszelkie prawa zastrzeżone</p>
+        </footer>
+        <!-- Footer section end -->
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
