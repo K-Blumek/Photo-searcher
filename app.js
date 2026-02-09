@@ -14,6 +14,9 @@ btnSearch.addEventListener('click', () => {
         let page = 1;
         let inputData = input.value;
         let accessKey = "RZEIOVfPhS7vMLkFdd2TSKGFBS4o9_FmcV1Nje3FSjw";
+        imgContainer.innerHTML = "";
+
+        if (!inputData) return;
         const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
         try {
             const response = await fetch(url);
@@ -22,7 +25,7 @@ btnSearch.addEventListener('click', () => {
             }
 
             const result = await response.json();
-            result.results.map( (imgEl) => {
+            result.results.map((imgEl) => {
                 const imgUrl = imgEl.urls.regular
                 const imgAlt = imgEl.alt_description
                 const img = document.createElement("img");
@@ -30,7 +33,7 @@ btnSearch.addEventListener('click', () => {
                 img.alt = imgAlt;
                 img.classList.add("photoEl");
                 imgContainer.appendChild(img);
-            })
+            });
 
 
         } catch (error) {
@@ -65,4 +68,3 @@ message.addEventListener('input', checkForm);
 btnSend.addEventListener('click', () => {
     alert('Wiadomość wysłana');
 })
-
